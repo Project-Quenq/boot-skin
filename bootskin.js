@@ -369,7 +369,7 @@
             selfWindowRef.querySelector('[data-action="new"]').onclick = addNewSkin;
             selfWindowRef.querySelector('[data-action="reset"]').onclick = resetSkins;
             selfWindowRef.querySelector('[data-action="exit"]').onclick = () => wm.closeWindow(hWnd);
-            selfWindowRef.querySelector('[data-action="about"]').onclick = () => dialogHandler.spawnDialog({icon: 'info', title: 'About BootSkin', text: 'BootSkin for Reborn XP by Quenq.', buttons: [['OK', (e) => wm.closeWindow(e.target.closest('app').id)]]});
+            selfWindowRef.querySelector('[data-action="about"]').onclick = () => dialogHandler.spawnDialog({icon: 'info', title: 'About BootSkin', text: 'Customize your startup with BootSkin for Reborn XP! This is the official app and community collection for classic and custom boot screens.', buttons: [['OK', (e) => wm.closeWindow(e.target.closest('app').id)]]});
             selfWindowRef.querySelector('[data-action="publish"]').onclick = () => window.open('https://github.com/Quenq-Systems/boot-skin', '_blank');
             selfWindowRef.querySelector('#preview-btn').onclick = showPreview;
             return hWnd;
